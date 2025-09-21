@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - أعمالي الفنية</title>
+
+  <!-- CSS -->
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="../CSS/fontawesome-free-7.0.1-web/css/all.min.css" rel="stylesheet">
+  <link href="../CSS/style.css" rel="stylesheet">
+  <style>
+    .auth-section {
+      max-width: 400px;
+      margin: 5rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: var(--main-bg-light);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    body.dark-mode .auth-section {
+      background-color: #2b2b2b;
+      color: #f9f6f2;
+    }
+    .auth-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-family: 'Rubik', sans-serif;
+      color: var(--dark-brown);
+    }
+    .auth-section .form-control {
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+    }
+    .auth-section button {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--brown);
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+    .auth-section button:hover {
+      background-color: var(--light-brown);
+      color: var(--dark-brown);
+    }
+    .auth-footer {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .auth-footer a {
+      color: var(--brown);
+      text-decoration: none;
+    }
+    .auth-footer a:hover {
+      color: var(--light-brown);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================== Navbar ================== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">أعمالي الفنية</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+      </ul>
+      <button id="darkModeToggle" class="btn btn-secondary ms-2">الوضع الليلي</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================== Signup Form ================== -->
+<section class="auth-section">
+  <h2>إنشاء حساب جديد</h2>
+  <form action="#" method="post">
+    <input type="text" class="form-control" name="name" placeholder="الاسم الكامل" required>
+    <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required>
+    <input type="password" class="form-control" name="password" placeholder="كلمة المرور" required>
+    <input type="password" class="form-control" name="confirm_password" placeholder="تأكيد كلمة المرور" required>
+    <button type="submit"><i class="fas fa-user-plus"></i> إنشاء الحساب</button>
+  </form>
+  <div class="auth-footer">
+    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+  </div>
+</section>
+
+
+<!-- ================== Footer ================== -->
+<footer class="text-center p-4">
+  <p>تابعوني على وسائل التواصل:</p>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=100022114713966&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+    <i class="fab fa-facebook-f fa-2x mx-2"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/all_amjed?igsh=cHJhM3Axa3ppeHNo" target="_blank">
+    <i class="fab fa-instagram fa-2x mx-2"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/967774618118" target="_blank">
+    <i class="fab fa-whatsapp fa-2x mx-2"></i>
+  </a>
+
+  <p class="mt-2">&copy; 2025 أمجد الصبيحي</p>
+</footer>
+
+<script src="../JS/bootstrap.bundle.min.js"></script>
+<script src="../JS/script.js"></script>
+</body>
+</html>

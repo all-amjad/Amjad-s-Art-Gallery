@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - أعمالي الفنية</title>
+
+  <!-- CSS -->
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="../CSS/fontawesome-free-7.0.1-web/css/all.min.css" rel="stylesheet">
+  <link href="../CSS/style.css" rel="stylesheet">
+  <link href="../CSS/lightbox.css" rel="stylesheet"> <!-- Lightbox -->
+  <style>
+    .img-shadow {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .img-shadow:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================== Navbar ================== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">أعمالي الفنية</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+      </ul>
+      <button id="darkModeToggle" class="btn btn-secondary ms-2">الوضع الليلي</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================== Gallery Tabs ================== -->
+<div class="container my-5">
+  <ul class="nav nav-tabs" id="galleryTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pencil">لوحات قلم رصاص</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ink">لوحات قلم تحبير</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#effects">إضاءة ومؤثرات</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#other">رسومات أخرى</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#normal">رسومات عادية</button></li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <!-- لوحات قلم رصاص (6) -->
+    <div class="tab-pane fade show active" id="pencil">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a href="../imges/Drawings/غريفيث.jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 1">
+            <img src="../imges/Drawings/غريفيث.jpg" class="img-fluid img-shadow" alt="لوحة 1">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/الليتش.jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 2">
+            <img src="../imges/Drawings/الليتش.jpg" class="img-fluid img-shadow" alt="لوحة 2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/قتالات.jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 3">
+            <img src="../imges/Drawings/قتالات.jpg" class="img-fluid img-shadow" alt="لوحة 3">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/غيتو.jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 4">
+            <img src="../imges/Drawings/غيتو.jpg" class="img-fluid img-shadow" alt="لوحة 4">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/كينج.jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 5">
+            <img src="../imges/Drawings/كينج.jpg" class="img-fluid img-shadow" alt="لوحة 5">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/موب سايكو (2).jpg" data-lightbox="pencil" data-title="لوحة قلم رصاص 6">
+            <img src="../imges/Drawings/موب سايكو (2).jpg" class="img-fluid img-shadow" alt="لوحة 6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- لوحات قلم تحبير (7) -->
+    <div class="tab-pane fade" id="ink">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a href="../imges/Drawings/غاتس.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 1">
+            <img src="../imges/Drawings/غاتس.jpg" class="img-fluid img-shadow" alt="تحبير 1">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/عمارات.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 2">
+            <img src="../imges/Drawings/عمارات.jpg" class="img-fluid img-shadow" alt="تحبير 2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/جمجمة.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 3">
+            <img src="../imges/Drawings/جمجمة.jpg" class="img-fluid img-shadow" alt="تحبير 3">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/ريوما 1.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 4">
+            <img src="../imges/Drawings/ريوما 1.jpg"class="img-fluid img-shadow" alt="تحبير 4">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/موساشي.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 5">
+            <img src="../imges/Drawings/موساشي.jpg" class="img-fluid img-shadow" alt="تحبير 5">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/الفارس الأسود.jpg" data-lightbox="ink" data-title="لوحة قلم تحبير 6">
+            <img src="../imges/Drawings/الفارس الأسود.jpg" class="img-fluid img-shadow" alt="تحبير 6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- إضاءة ومؤثرات (5) -->
+    <div class="tab-pane fade" id="effects">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a href="../imges/Drawings/موب سايكو.jpg" data-lightbox="effects" data-title="تأثير 1">
+            <img src="../imges/Drawings/موب سايكو.jpg" class="img-fluid img-shadow" alt="تأثير 1">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/موب.jpg" data-lightbox="effects" data-title="تأثير 2">
+            <img src="../imges/Drawings/موب.jpg" class="img-fluid img-shadow" alt="تأثير 2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/ريوما.jpg" data-lightbox="effects" data-title="تأثير 3">
+            <img src="../imges/Drawings/ريوما.jpg" class="img-fluid img-shadow" alt="تأثير 3">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/بروك.jpg" data-lightbox="effects" data-title="تأثير 4">
+            <img src="../imges/Drawings/بروك.jpg" class="img-fluid img-shadow" alt="تأثير 4">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/ترافلغار.jpg" data-lightbox="effects" data-title="تأثير 5">
+            <img src="../imges/Drawings/ترافلغار.jpg" class="img-fluid img-shadow" alt="تأثير 5">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/هيسوكا.jpg" data-lightbox="effects" data-title="تأثير 6">
+            <img src="../imges/Drawings/هيسوكا.jpg" class="img-fluid img-shadow" alt="تأثير 6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- رسومات أخرى (2) -->
+    <div class="tab-pane fade" id="other">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a href="../imges/Drawings/سوبرا.jpg" data-lightbox="other" data-title="رسمة أخرى 1">
+            <img src="../imges/Drawings/سوبرا.jpg" class="img-fluid img-shadow" alt="رسمة أخرى 1">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/جي كلاس.jpg" data-lightbox="other" data-title="رسمة أخرى 2">
+            <img src="../imges/Drawings/جي كلاس.jpg" class="img-fluid img-shadow" alt="رسمة أخرى 2">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- رسومات عادية (5) -->
+    <div class="tab-pane fade" id="normal">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a href="../imges/Drawings/ايزن.jpg" data-lightbox="normal" data-title="رسمة عادية 1">
+            <img src="../imges/Drawings/ايزن.jpg" class="img-fluid img-shadow" alt="رسمة عادية 1">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/لوفي.jpg" data-lightbox="normal" data-title="رسمة عادية 2">
+            <img src="../imges/Drawings/لوفي.jpg"class="img-fluid img-shadow" alt="رسمة عادية 2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/سونغ.jpg" data-lightbox="normal" data-title="رسمة عادية 3">
+            <img src="../imges/Drawings/سونغ.jpg" class="img-fluid img-shadow" alt="رسمة عادية 3">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/سايتاما.jpg" data-lightbox="normal" data-title="رسمة عادية 4">
+            <img src="../imges/Drawings/سايتاما.jpg" class="img-fluid img-shadow" alt="رسمة عادية 4">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/انفينسبل.jpg" data-lightbox="normal" data-title="رسمة عادية 5">
+            <img src="../imges/Drawings/انفينسبل.jpg" class="img-fluid img-shadow" alt="رسمة عادية 5">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../imges/Drawings/سكونا.jpg" data-lightbox="normal" data-title="رسمة عادية 6">
+            <img src="../imges/Drawings/سكونا.jpg" class="img-fluid img-shadow" alt="رسمة عادية 6">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================== Footer ================== -->
+<footer class="text-center p-4">
+  <p>تابعوني على وسائل التواصل:</p>
+  <a href="https://www.facebook.com/profile.php?id=100022114713966&mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
+  <a href="https://www.instagram.com/all_amjed?igsh=cHJhM3Axa3ppeHNo" target="_blank"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+  <a href="https://wa.me/967774618118" target="_blank"><i class="fab fa-whatsapp fa-2x mx-2"></i></a>
+  <p class="mt-2">&copy; 2025 أمجد الصبيحي</p>
+</footer>
+
+<!-- JS -->
+<script src="../JS/bootstrap.bundle.min.js"></script>
+<script src="../JS/lightbox.js"></script>
+<script src="../JS/script.js"></script>
+
+</body>
+</html>

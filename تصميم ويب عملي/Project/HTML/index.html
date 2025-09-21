@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My art Website</title>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../CSS/fontawesome-free-7.0.1-web/css/all.min.css" rel="stylesheet">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <!-- WOWSlider CSS -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+</head>
+<body>
+
+<!-- ================== Navbar ================== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">أعمالي الفنية</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+      </ul>
+      <button id="darkModeToggle" class="btn btn-secondary ms-2">الوضع الليلي</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================== Hero Section ================== -->
+<section class="hero text-center py-5">
+  <h1 class="display-4 mb-3">أعمالي الفنية - مانجا وأنمي</h1>
+  <p class="lead mb-4">رسومات بتفاصيل عالية </p>
+
+  <!-- ================== WOWSlider ================== -->
+  <div style="max-width: 500px; margin: auto;">
+    <div id="wowslider-container1">
+      <div class="ws_images"><ul>
+        <li><img src="data1/images/img20250920wa0003.jpg" alt="سوبرا" title="سوبرا" id="wows1_0"/></li>
+        <li><img src="data1/images/_108_20240221171452.png" alt="جي كلاسس" title="جي كلاسس" id="wows1_1"/></li>
+        <li><img src="data1/images/_0.png" alt="تاكيزو" title="تاكيزو" id="wows1_2"/></li>
+        <li><img src="data1/images/_1.jpg" alt="زورو" title="زورو" id="wows1_3"/></li>
+      </ul></div>
+      <div class="ws_bullets"><div>
+        <a href="#" title="سوبرا"><span><img src="data1/tooltips/img20250920wa0003.jpg" alt="سوبرا"/>1</span></a>
+        <a href="#" title="جي كلاسس"><span><img src="data1/tooltips/_108_20240221171452.png" alt="جي كلاسس"/>2</span></a>
+        <a href="#" title="تاكيزو"><span><img src="data1/tooltips/_0.png" alt="تاكيزو"/>3</span></a>
+        <a href="#" title="زورو"><span><img src="data1/tooltips/_1.jpg" alt="زورو"/>4</span></a>
+      </div></div>
+      <div class="ws_shadow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Preview Gallery ================== -->
+<section class="preview-gallery container my-5">
+  <h2 class="text-center mb-4">معرض مختصر</h2>
+  <div class="row g-3">
+    <div class="col-md-4"><img src="../imges/Drawings/تاهيزو.jpg" class="img-fluid rounded shadow" alt="Art 1"></div>
+    <div class="col-md-4"><img src="../imges/Drawings/غارو.jpg" class="img-fluid rounded shadow" alt="Art 2"></div>
+    <div class="col-md-4"><img src="../imges/Drawings/مادارا.jpg" class="img-fluid rounded shadow" alt="Art 3"></div>
+  </div>
+</section>
+
+<!-- ================== Footer ================== -->
+<footer class="text-center p-4">
+  <p>تابعوني على وسائل التواصل:</p>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=100022114713966&mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+    <i class="fab fa-facebook-f fa-2x mx-2"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/all_amjed?igsh=cHJhM3Axa3ppeHNo" target="_blank">
+    <i class="fab fa-instagram fa-2x mx-2"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/967774618118" target="_blank">
+    <i class="fab fa-whatsapp fa-2x mx-2"></i>
+  </a>
+
+  <p class="mt-2">&copy; 2025 أمجد الصبيحي</p>
+</footer>
+
+<!-- ================== JS ================== -->
+<script src="../JS/bootstrap.bundle.min.js"></script>
+<script src="../JS/script.js"></script>
+
+<!-- WOWSlider JS -->
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+* ====== الخطوط الأساسية ====== */
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/Cairo-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/Cairo-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* 🎨 ألوان الموقع */
+:root {
+  --main-bg-light: #f9f6f2;   /* خلفية الوضع الفاتح */
+  --main-text-light: #1c1c1c; /* نص الوضع الفاتح */
+  --main-bg-dark: #1c1c1c;    /* خلفية الوضع الليلي */
+  --main-text-dark: #f9f6f2;  /* نص الوضع الليلي */
+  --brown: #5d4037;
+  --light-brown: #d4a373;
+  --dark-brown: #3e2723;
+  --hero-text: #4b3621;
+  --social-icon: #ffffff;      /* أيقونات التواصل أبيض دائمًا */
+  --social-text: #ffffff;      /* نص بجانب الأيقونات أبيض دائمًا */
+}
+
+/* ====== الأساسيات ====== */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-light);
+  color: var(--main-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--main-bg-dark);
+  color: var(--main-text-dark);
+}
+
+/* ====== Navbar ====== */
+nav.navbar {
+  background-color: var(--dark-brown);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--light-brown);
+}
+
+body.dark-mode nav.navbar {
+  background-color: #2b2b2b;
+}
+
+/* ====== زر الوضع الليلي ====== */
+#darkModeToggle {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--brown);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  background-color: var(--light-brown);
+  color: var(--dark-brown);
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: var(--light-brown);
+  color: #000;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  background-color: inherit;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  color: var(--hero-text);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .hero h1 {
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--brown);
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .hero p {
+  color: var(--light-brown);
+}
+
+.hero img {
+  border-radius: 10px;
+  border: 3px solid var(--light-brown);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.03);
+}
+
+body.dark-mode .hero img {
+  border: 3px solid #555;
+}
+
+/* ====== Preview Gallery ====== */
+.preview-gallery h2 {
+  font-family: 'Cairo', sans-serif;
+  color: var(--dark-brown);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .preview-gallery h2 {
+  color: var(--light-brown);
+}
+
+.preview-gallery img {
+  border-radius: 10px;
+  border: 3px solid var(--light-brown);
+  transition: transform 0.3s ease;
+}
+
+.preview-gallery img:hover {
+  transform: scale(1.03);
+}
+
+body.dark-mode .preview-gallery img {
+  border: 3px solid #555;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: var(--dark-brown);
+  color: #ffffff; /* النص العام أبيض دائمًا */
+  text-align: center;
+  padding: 1rem 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* روابط عامة في الفوتر */
+footer a {
+  color: #ffffff; /* أبيض دائمًا */
+  margin: 0 8px;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--light-brown); /* يتغير عند التحويم */
+  transform: scale(1.1);
+}
+
+/* ====== أيقونات التواصل ====== */
+footer .social-icon {
+  color: #ffffff; /* أبيض دائمًا */
+  margin: 0 10px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+footer .social-text {
+  color: #ffffff; /* نص بجانب الأيقونات أبيض دائمًا */
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* عند التحويم على الأيقونات فقط */
+footer .social-icon:hover {
+  color: var(--light-brown);
+}
+
+/* الفوتر بالوضع الليلي */
+body.dark-mode footer {
+  background-color: #2b2b2b;
+}
+
+
+
+
